@@ -1,4 +1,5 @@
 import MotionDiv from "@/components/motion-div";
+import Link from "next/link";
 
 export default function about() {
   return (
@@ -13,8 +14,18 @@ export default function about() {
         <article className="flex flex-col gap-4">
           <MotionDiv delayOffset={0.4}>
             <p>
-              Hello, I'm Pradhumn Gautam. I'm an self-taught{" "}
-              <b>Full Stack Developer</b> based in New Delhi, India.
+              Hello, I'm{" "}
+              <b>
+                Pradhumn Gautam{" "}
+                <Link
+                  className="text-slate-500"
+                  href={"https://twitter.com/iPradhumnGautam"}
+                >
+                  (@iPradhumnGautam)
+                </Link>{" "}
+              </b>
+              . I'm an self-taught <b>Full Stack Developer</b> based in New
+              Delhi, India.
             </p>
           </MotionDiv>
           <MotionDiv delayOffset={0.5}>
