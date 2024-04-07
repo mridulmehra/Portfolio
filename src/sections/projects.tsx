@@ -10,7 +10,7 @@ const Projects = () => {
       </MotionDiv>
 
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div></div>
+        <div>hello</div>
       </div>
     </div>
   );
