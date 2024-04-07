@@ -9,6 +9,7 @@ const goldenSignature = localFont({
 
 export default function Header() {
   const links = ["about", "skills", "projects", "contact"];
+  
   return (
     <>
       <nav className="fixed z-50 border-b justify-center py-3 shadow-sm bg-background/60 backdrop-blur-md flex w-full select-none font-light md:px-28">
@@ -16,7 +17,7 @@ export default function Header() {
           <div
             className={cn(
               "text-5xl drop-shadow-2xl pt-1 hover:scale-105 transition-all",
-              goldenSignature.className,
+              goldenSignature.className
             )}
           >
             <Link href="/">Pradhumn Gautam</Link>
