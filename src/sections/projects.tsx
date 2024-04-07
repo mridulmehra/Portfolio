@@ -6,7 +6,10 @@ import { Separator } from "@/components/ui/separator";
 const Projects = () => {
   return (
     <MotionDiv delayOffset={0.2}>
-      <div className="my-8 md:my-12 w-full md:max-w-screen-2xl md:mx-auto md:px-16">
+      <div
+        className="my-8 md:my-12 w-full md:max-w-screen-2xl md:mx-auto md:px-16 scroll-mt-24"
+        id="projects"
+      >
         <div className="flex justify-center items-center text-3xl font-semibold">
           Projects
         </div>

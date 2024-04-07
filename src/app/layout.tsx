@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <Header />
-        <main className="container lg:px-28">{children}</main>
+        <main className="container lg:px-28 pt-20">{children}</main>
         <BackToTop />
       </body>
     </html>

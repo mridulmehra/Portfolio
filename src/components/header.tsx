@@ -8,14 +8,14 @@ const goldenSignature = localFont({
 });
 
 export default function Header() {
-  const links = ["about", "skills", "contact"];
+  const links = ["about", "skills", "projects", "contact"];
   return (
     <>
-      <nav className="justify-centerpy-2 flex w-full select-none pt-6 font-light md:px-28 md:pb-2">
+      <nav className="fixed z-50 border-b justify-center py-3 shadow-sm bg-background/60 backdrop-blur-md flex w-full select-none font-light md:px-28">
         <div className="container flex flex-col items-center justify-between md:flex-row">
           <div
             className={cn(
-              "text-5xl drop-shadow-2xl",
+              "text-5xl drop-shadow-2xl pt-1 hover:scale-105 transition-all",
               goldenSignature.className,
             )}
           >
@@ -25,7 +25,7 @@ export default function Header() {
             {links.map((link) => (
               <span
                 key={link}
-                className="cursor-pointer font-semibold"
+                className="cursor-pointer font-semibold hover:text-emerald-700"
                 onClick={() => {
                   document
                     .getElementById(link)
