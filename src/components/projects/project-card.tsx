@@ -18,7 +18,7 @@ type ProjectCardProps = projectData;
 
 const ProjectCard = ({ title,header, description, tags, link }: ProjectCardProps) => {
   return (
-    <Card className="md:max-w-screen-md md:mx-auto rounded-none bg-transparent border-none">
+    <Card className="md:max-w-screen-md md:mx-auto rounded-none bg-transparent border-none shadow-none">
       <CardHeader className="flex">
         <CardTitle className="flex items-center justify-between">
           <div className="flex text-3xl items-center">
@@ -57,7 +57,7 @@ const ProjectCard = ({ title,header, description, tags, link }: ProjectCardProps
         <div className="flex gap-3 flex-wrap">
           {tags.map((tag, index) => (
             <div
-              className="border rounded-full px-4 py-1 shadow-md text-emerald-300"
+              className="border rounded-full px-4 py-1 shadow-sm text-sm text-emerald-500"
               key={index}
             >
               {tag}
