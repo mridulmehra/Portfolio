@@ -9,9 +9,9 @@ const Projects = () => {
         </h2>
       </MotionDiv>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 ">
-
-    </div>
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div></div>
+      </div>
     </div>
   );
 };
