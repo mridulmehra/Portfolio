@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Socials = () => {
   return (
-    <DropdownMenu className="p-4">
+    <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center cursor-pointer font-semibold hover:text-emerald-500">
         Socials <ChevronDown className="h-4 w-4 ml-1" />
       </DropdownMenuTrigger>
