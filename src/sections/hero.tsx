@@ -38,9 +38,7 @@ export default function hero() {
         </MotionDiv>
       </div>
 
-      <div className="my-8">
-        <ContactList delayOffset={1.45} showWhenInView={false} />
-      </div>
+      
     </section>
   );
 }

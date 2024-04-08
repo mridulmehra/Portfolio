@@ -137,12 +137,12 @@ export default function skills() {
   return (
     <section
       id="skills"
-      className="flex w-full flex-col items-center text-center"
+      className="flex w-full flex-col items-center text-center scroll-mt-24"
     >
       <MotionDiv>
-        <h2 className="mb-4">My Skills</h2>
+        <h2 className="mb-4 text-3xl font-semibold">My Skills</h2>
       </MotionDiv>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center ">
         {data.map((item, index) => (
           <MotionDiv key={index}>
             <div className="mb-6 md:px-2">

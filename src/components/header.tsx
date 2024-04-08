@@ -8,7 +8,7 @@ const goldenSignature = localFont({
 });
 
 export default function Header() {
-  const links = ["about", "skills", "projects", "contact"];
+  const links = ["about", "projects", "skills" ,"Socials", "contact"];
   
   return (
     <>
