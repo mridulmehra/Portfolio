@@ -21,7 +21,7 @@ export const projectsContent: projectData[] = [
     title: "Medium",
     header: "Blogging website",
     description:
-      "Medium is a blogging website which allows user to do CRUD operations on their blogs.Hono.js library of wrangler is used here for writing backend server which is hosted on cloudflare workers, connection-pooling is used for maintaining postgress requests.",
+      "Medium is a blogging website which allows user to do CRUD operations on their blogs. Hono.js library of wrangler is used here for writing backend server which is hosted on cloudflare workers, connection-pooling is used for maintaining postgress requests.",
     tags: [
       "Typescript",
       "React.js",
@@ -69,7 +69,7 @@ export const projectsContent: projectData[] = [
     title: "Swift Spend",
     header: "Banking app",
     description:
-      "SWIFT SPEND is a banking app which enables user to transfer money to other users. backend involves RESTful APIs and custom token-based authentication for secure access control including the password hashing through bCrypt, sessions are used for making transactions for controlling multiple transfer requests on same account or in the case of server/database crash.",
+      "SWIFT SPEND is a banking app which enables user to transfer money to other users. Backend involves RESTful APIs and custom token-based authentication for secure access control including the password hashing through bCrypt, sessions are used for making transactions for controlling multiple transfer requests on same account or in the case of server/database crash.",
     tags: [
       "Javascript",
       "Node.js",
