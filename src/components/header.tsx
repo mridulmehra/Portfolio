@@ -27,7 +27,7 @@ export default function Header() {
             {links.map((link) => (
               <span
                 key={link}
-                className="cursor-pointer font-semibold hover:text-emerald-700"
+                className="cursor-pointer font-semibold hover:text-emerald-500"
                 onClick={() => {
                   document
                     .getElementById(link)
