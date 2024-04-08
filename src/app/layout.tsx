@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     { name: "Pradhumn Gautam", url: "https://github.com/pradhumngautam" },
     { name: "Pradhumn", url: "https://github.com/pradhumngautam" },
   ],
+  icons: [
+    {
+      url: "/photo.jpeg",
+      href: "/photo.jpeg",
+    },
+  ],
   description: "Pradhumn's personal portfolio website",
   openGraph: {
     title: "Pradhumn Gautam | Portfolio",
