@@ -1,5 +1,11 @@
 import React from "react";
-import { ExternalLink, GanttChart, GithubIcon, Key, Link2Icon } from "lucide-react";
+import {
+  ExternalLink,
+  GanttChart,
+  GithubIcon,
+  Key,
+  Link2Icon,
+} from "lucide-react";
 import Link from "next/link";
 import {
   Card,
@@ -12,28 +18,37 @@ import {
 
 import { projectData } from "./project-content";
 
-
 type ProjectCardProps = projectData;
 
-
-const ProjectCard = ({ title,header, description, tags, link }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  header,
+  description,
+  tags,
+  link,
+}: ProjectCardProps) => {
   return (
-    <Card className="md:max-w-screen-md md:mx-auto rounded-none bg-transparent border-none shadow-none">
-      <CardHeader className="flex">
-        <CardTitle className="flex items-center justify-between">
-          <div className="flex text-3xl items-center">
-            <GanttChart className="mr-2" /> {title}
-          </div>
+    <Card className="md:max-w-screen-xl md:mx-auto rounded-none bg-transparent border-none shadow-none grid grid-cols-9">
+      <div className="w-full h-full bg-red-400 col-span-3">
+        {/* <Image /> */}
+      </div>
 
-          <div className="flex gap-2 ">
-            <Link
-              href={link.github}
-              className="hover:text-blue-500 transition-all" 
-            >
-            <GithubIcon className="h-6 w-6 hover:text-green-700" />
-            </Link>
+      <div className="col-span-6">
+        <CardHeader className="flex">
+          <CardTitle className="flex items-center justify-between">
+            <div className="flex text-xl md:text-2xl items-center">
+              <GanttChart className="mr-2" /> {title}
+            </div>
 
-            {link.live && (
+            <div className="flex gap-2">
+              <Link
+                href={link.github}
+                className="hover:text-blue-500 transition-all"
+              >
+                <GithubIcon className="h-6 w-6 hover:text-green-700" />
+              </Link>
+
+              {link.live && (
                 <Link
                   href={link.live}
                   className="hover:text-blue-500 transition-all"
@@ -41,30 +56,30 @@ const ProjectCard = ({ title,header, description, tags, link }: ProjectCardProps
                   <ExternalLink className="h-5 w-5" />
                 </Link>
               )}
-            
-          </div>
-        </CardTitle>
-
-        <CardDescription className="text-lg"> {header}</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="text-neutral-500 text-xl ">
-          {description}
-        </div>
-      </CardContent>
-
-      <CardFooter>
-        <div className="flex gap-3 flex-wrap">
-          {tags.map((tag, index) => (
-            <div
-              className="border rounded-full px-4 py-1 shadow-sm text-sm text-emerald-500"
-              key={index}
-            >
-              {tag}
             </div>
-          ))}
-        </div>
-      </CardFooter>
+          </CardTitle>
+
+          <CardDescription className="">{header}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="text-neutral-500 font-medium md:text-lg">
+            {description}
+          </div>
+        </CardContent>
+
+        <CardFooter>
+          <div className="flex gap-3 flex-wrap">
+            {tags.map((tag, index) => (
+              <div
+                className="border rounded-full px-4 py-1 shadow-sm text-xs text-emerald-500"
+                key={index}
+              >
+                {tag}
+              </div>
+            ))}
+          </div>
+        </CardFooter>
+      </div>
     </Card>
   );
 };
