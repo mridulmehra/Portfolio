@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Pradhumn's personal portfolio website",
     images: [
       {
-        url: "/dp",
+        url: "/photo",
         alt: "Pradhumn Gautam | Portfolio",
         width: 640,
         height: 800,
