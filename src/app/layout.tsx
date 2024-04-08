@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Header from "@/components/header";
 import BackToTop from "@/components/back-to-top";
+import Footer from "@/components/footer";
+import { cn } from "@/lib/utils";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -14,7 +16,7 @@ export const metadata: Metadata = {
   description: "Pradhumn's personal portfolio website",
   openGraph: {
     title: "Pradhumn Gautam | Portfolio",
-    description: "Eric Huang's personal portfolio website",
+    description: "Pradhumn's personal portfolio website",
     images: [
       {
         url: "/dp",
@@ -33,9 +35,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body
+        className={cn("bg-neutral-900 text-neutral-100", montserrat.className)}
+      >
         <Header />
-        <main className="container lg:px-28 pt-20">{children}</main>
+        <main className="container lg:px-28 pt-24">{children}</main>
+        <Footer />
         <BackToTop />
       </body>
     </html>

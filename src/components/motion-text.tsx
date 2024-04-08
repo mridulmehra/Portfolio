@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 export default function MotionText({
@@ -11,7 +12,7 @@ export default function MotionText({
   const text = children;
   const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
   const letters = Array.from(segmenter.segment(text), (s) => s.segment).map(
-    (letter) => (letter === " " ? "\u00A0" : letter),
+    (letter) => (letter === " " ? "\u00A0" : letter)
   );
 
   return (

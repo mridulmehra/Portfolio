@@ -1,14 +1,21 @@
-import ContactList from "@/components/contact-list";
-import MotionText from "@/components/motion-text";
 import MotionDiv from "@/components/motion-div";
 import Image from "next/image";
 import DP from "../../public/dp.png";
+import { cn } from "@/lib/utils";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export default function hero() {
   return (
     <section className="my-8 flex flex-col items-center justify-center">
       <h1 className="mb-4 text-center text-lg md:text-[2rem]">
-        <MotionText delayOffset={0}>Hi, I'm Pradhumn Gautam! 👋</MotionText>
+        <MotionDiv delayOffset={0.2} className={cn(poppins.className)}>
+          <span className="font-semibold">Hi, I'm Pradhumn Gautam! 👋</span>
+        </MotionDiv>
       </h1>
 
       <div className="overflow-hidden rounded-full p-3 md:p-4">
@@ -37,8 +44,6 @@ export default function hero() {
           </p>
         </MotionDiv>
       </div>
-
-      
     </section>
   );
 }

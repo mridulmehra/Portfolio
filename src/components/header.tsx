@@ -2,14 +2,15 @@
 import Link from "next/link";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import Socials from "@/sections/socials";
 const goldenSignature = localFont({
   src: "../assets/GoldenSignature.otf",
   display: "swap",
 });
 
 export default function Header() {
-  const links = ["about", "projects", "skills" ,"Socials", "contact"];
-  
+  const links = ["about", "projects", "skills", "contact"];
+
   return (
     <>
       <nav className="fixed z-50 border-b justify-center py-3 shadow-sm bg-background/60 backdrop-blur-md flex w-full select-none font-light md:px-28">
@@ -36,6 +37,10 @@ export default function Header() {
                 {link.charAt(0).toUpperCase() + link.slice(1)}
               </span>
             ))}
+
+            <span>
+              <Socials />
+            </span>
           </div>
         </div>
       </nav>

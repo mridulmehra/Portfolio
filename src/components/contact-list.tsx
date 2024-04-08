@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
-  faInstagram,
   faGithub,
-  faTiktok,
   faXTwitter,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import MotionList from "./motion-list";
 import { Button } from "@/components/ui/button";
@@ -14,38 +13,42 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+
 import { cn } from "@/lib/utils";
+import { GithubIcon, LinkedinIcon, Mail, TwitterIcon } from "lucide-react";
+
 type Contact = {
   name: string;
   className: string;
   href: string;
   icon: any;
 };
-const contacts: Contact[] = [
+
+export const contacts: Contact[] = [
   {
     name: "Email",
     className: "bg-yellow-500 hover:bg-yellow-600",
     href: "mailto:pradhumngautam0506@gmail.com",
-    icon: faEnvelope,
+    icon: <Mail />,
   },
 
   {
-    name: "X",
+    name: "Twitter/X",
     className: "bg-black hover:bg-gray-800/90",
     href: "https://twitter.com/iPradhumnGautam",
-    icon: faXTwitter,
+    icon: <TwitterIcon />,
   },
   {
     name: "Github",
     className: "bg-black hover:bg-gray-800/90",
     href: "https://github.com/pradhumngautam",
-    icon: faGithub,
+    icon: <GithubIcon />,
   },
   {
-    name: "Instagram",
-    className: "bg-pink-500 hover:bg-pink-600",
-    href: "https://instagram.com/gautam_pradhumn/",
-    icon: faInstagram,
+    name: "LinkedIn",
+    className: "bg-black hover:bg-gray-800/90",
+    href: "https://linkedin.com/in/pradhumngautam",
+    icon: <LinkedinIcon />,
   },
 ];
 export default function ContactList({
@@ -64,7 +67,7 @@ export default function ContactList({
               <Button
                 className={cn(
                   "flex h-11 w-11 items-center justify-center rounded-full p-3 md:h-12 md:w-12",
-                  contact.className,
+                  contact.className
                 )}
                 asChild
                 aria-label={contact.name}
