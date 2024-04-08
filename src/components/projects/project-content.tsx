@@ -1,4 +1,7 @@
 export type projectData = {
+  image: {
+    src: string;
+  };
   title: string;
   description: string;
   header: string;
@@ -12,6 +15,9 @@ export type projectData = {
 
 export const projectsContent: projectData[] = [
   {
+    image: {
+      src: "/medium.jpeg",
+    },
     title: "Medium",
     header: "Blogging website",
     description:
@@ -34,6 +40,9 @@ export const projectsContent: projectData[] = [
     },
   },
   {
+    image: {
+      src: "/portfolio.jpeg",
+    },
     title: "Portfolio",
     header: "Pradhumn gautam | portfolio",
     description:
@@ -54,6 +63,9 @@ export const projectsContent: projectData[] = [
     },
   },
   {
+    image: {
+      src: "/medium.jpeg",
+    },
     title: "Swift Spend",
     header: "Banking app",
     description:
@@ -73,5 +85,4 @@ export const projectsContent: projectData[] = [
       live: "https://paytm-gules.vercel.app/",
     },
   },
-  
 ];

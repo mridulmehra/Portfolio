@@ -18,6 +18,7 @@ const Projects = () => {
             return (
               <div key={idx}>
                 <ProjectCard
+                  image={card.image}
                   title={card.title}
                   header={card.header}
                   description={card.description}

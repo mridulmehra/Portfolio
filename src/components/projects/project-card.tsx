@@ -6,6 +6,7 @@ import {
   Key,
   Link2Icon,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Card,
@@ -21,6 +22,7 @@ import { projectData } from "./project-content";
 type ProjectCardProps = projectData;
 
 const ProjectCard = ({
+  image,
   title,
   header,
   description,
@@ -28,12 +30,18 @@ const ProjectCard = ({
   link,
 }: ProjectCardProps) => {
   return (
-    <Card className="md:max-w-screen-xl md:mx-auto rounded-none bg-transparent border-none shadow-none grid grid-cols-9">
-      <div className="w-full h-full bg-red-400 col-span-3">
-        {/* <Image /> */}
+    <Card className="md:max-w-screen-xl md:mx-auto rounded-none bg-transparent border-none shadow-none grid grid-cols-1  lg:grid-cols-10 mt-8">
+      <div className="w-full h-full flex items-start mt-6 lg:col-span-4">
+        <Image
+          src={image.src}
+          width={500}
+          height={500}
+          alt="Picture of the author"
+          className="rounded-lg"
+        />
       </div>
 
-      <div className="col-span-6">
+      <div className="lg:col-span-6">
         <CardHeader className="flex">
           <CardTitle className="flex items-center justify-between">
             <div className="flex text-xl md:text-2xl items-center">
@@ -62,9 +70,7 @@ const ProjectCard = ({
           <CardDescription className="">{header}</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="text-neutral-500 font-medium md:text-lg">
-            {description}
-          </div>
+          <div className="text-neutral-500 font-medium">{description}</div>
         </CardContent>
 
         <CardFooter>

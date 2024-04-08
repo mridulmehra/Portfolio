@@ -24,8 +24,8 @@ export default function hero() {
         </MotionDiv>
       </div>
 
-      <h1 className="text-center text-xl font-semibold">
-        <MotionDiv delayOffset={0.8}>Software Engineer 🧑🏻‍💻</MotionDiv>
+      <h1 className="text-center text-2xl font-semibold">
+        <MotionDiv delayOffset={0.8}>Software Engineer</MotionDiv>
       </h1>
 
       <h1 className="text-center text-xl ">
@@ -38,9 +38,9 @@ export default function hero() {
         </MotionDiv>
 
         <MotionDiv delayOffset={1.4}>
-          <p className="text-md">
-            <b>Typescript </b> & <b> Python </b> guy at the morning.
-            <b> Microservices </b>kid at the night.
+          <p className="text-lg">
+            Typescript & Python guy at the morning. Systems & Infra kid at the
+            night.
           </p>
         </MotionDiv>
       </div>
