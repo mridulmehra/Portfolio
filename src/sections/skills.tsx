@@ -21,6 +21,8 @@ import macosIcon from "@/assets/icons/macos.png";
 import vscodeIcon from "@/assets/icons/vscode.png";
 import warpIcon from "@/assets/icons/warp.webp";
 import postmanIcon from "@/assets/icons/postman.svg";
+import { cn } from "@/lib/utils";
+
 export default function skills() {
   const data = [
     {
@@ -29,43 +31,53 @@ export default function skills() {
         {
           name: "React.js",
           icon: reactIcon,
+          invert: false,
         },
         {
           name: "Next.js",
           icon: nextjsIcon,
+          invert: true,
         },
         {
           name: "TypeScript",
           icon: typescriptIcon,
+          invert: false,
         },
         {
           name: "JavaScript",
           icon: javascriptIcon,
+          invert: false,
         },
         {
           name: "HTML5",
           icon: html5Icon,
+          invert: false,
         },
         {
           name: "Tailwind CSS",
           icon: tailwindcssIcon,
+          invert: false,
         },
 
         {
           name: "shadcn/ui",
           icon: shadcnuiIcon,
+          invert: false,
         },
         {
           name: "PNPM",
           icon: pnpmIcon,
+          invert: false,
         },
         {
           name: "Vite",
           icon: viteIcon,
+          invert: false,
         },
         {
           name: "Prettier",
           icon: prettierIcon,
+          invert: false,
         },
       ],
     },
@@ -75,18 +87,22 @@ export default function skills() {
         {
           name: "Node.js",
           icon: nodejsIcon,
+          invert: false,
         },
         {
           name: "Express.js",
           icon: expressjsIcon,
+          invert: true,
         },
         {
           name: "Prisma ORM",
           icon: prismaIcon,
+          invert: true,
         },
         {
           name: "MySQL",
           icon: mysqlIcon,
+          invert: false,
         },
       ],
     },
@@ -96,18 +112,22 @@ export default function skills() {
         {
           name: "TypeScript",
           icon: typescriptIcon,
+          invert: false,
         },
         {
           name: "JavaScript",
           icon: javascriptIcon,
+          invert: false,
         },
         {
           name: "Python",
           icon: pythonIcon,
+          invert: false,
         },
         {
           name: "C++",
           icon: javaIcon,
+          invert: false,
         },
       ],
     },
@@ -117,18 +137,22 @@ export default function skills() {
         {
           name: "macOS",
           icon: macosIcon,
+          invert: true,
         },
         {
           name: "VS Code",
           icon: vscodeIcon,
+          invert: false,
         },
         {
           name: "Warp Terminal",
           icon: warpIcon,
+          invert: false,
         },
         {
           name: "Postman",
           icon: postmanIcon,
+          invert: false,
         },
       ],
     },
@@ -146,7 +170,10 @@ export default function skills() {
         {data.map((item, index) => (
           <MotionDiv key={index}>
             <div className="mb-6 md:px-2">
-              <h3>{item.title}</h3>
+              <h3 className="text-lg my-3 text-neutral-400 font-semibold">
+                {item.title}
+              </h3>
+
               <MotionList className="flex flex-wrap justify-evenly gap-0 md:gap-5 md:px-6 lg:justify-center">
                 {item.skills.map((skill) => (
                   <SkillCard key={skill.name} {...skill} />
@@ -160,12 +187,25 @@ export default function skills() {
   );
 }
 
-function SkillCard({ icon, name }: { icon: string; name: string }) {
+function SkillCard({
+  icon,
+  name,
+  invert,
+}: {
+  icon: string;
+  name: string;
+  invert: boolean;
+}) {
   return (
     <div className="group rounded-xl border-none p-5 text-center shadow-none">
       <div className="flex flex-col items-center gap-2">
         <div className="flex h-16 w-16 items-center justify-center">
-          <Image src={icon} alt={name} priority />
+          <Image
+            src={icon}
+            alt={name}
+            priority
+            className={cn(invert && "invert")}
+          />
         </div>
         <p>{name}</p>
       </div>
