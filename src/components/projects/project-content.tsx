@@ -57,9 +57,9 @@ export const projectsContent: projectData[] = [
       "Shadcn UI",
     ],
     link: {
-      github: "https://github.com/pradhumngautam/paytm",
+      github: "https://github.com/pradhumngautam/pradhumn-portfolio",
       youtube: "",
-      live: "https://paytm-gules.vercel.app/",
+      live: "https://pradhumngautam.vercel.app/",
     },
   },
   {
