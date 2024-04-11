@@ -64,7 +64,7 @@ export const projectsContent: projectData[] = [
   },
   {
     image: {
-      src: "/medium.jpeg",
+      src: "/swift.jpeg",
     },
     title: "Swift Spend",
     header: "Banking app",
