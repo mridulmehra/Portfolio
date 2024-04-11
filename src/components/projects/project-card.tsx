@@ -51,6 +51,7 @@ const ProjectCard = ({
             <div className="flex gap-2">
               <Link
                 href={link.github}
+                target="_blank"
                 className="hover:text-blue-500 transition-all"
               >
                 <GithubIcon className="h-6 w-6 hover:text-green-700" />
@@ -59,6 +60,7 @@ const ProjectCard = ({
               {link.live && (
                 <Link
                   href={link.live}
+                  target="_blank"
                   className="hover:text-blue-500 transition-all"
                 >
                   <ExternalLink className="h-5 w-5" />
