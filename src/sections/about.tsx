@@ -42,7 +42,7 @@ export default function about() {
       <div className="lg:order-2 lg:w-1/3">
         <MotionDiv delayOffset={0.4}>
           <Image
-            src="/photo.jpeg"
+            src="/pradhumngautam.jpeg"
             alt="photo"
             width={420}
             height={420}
