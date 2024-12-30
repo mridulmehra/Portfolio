@@ -16,6 +16,22 @@ export type projectData = {
 export const projectsContent: projectData[] = [
   {
     image: {
+      src: "/codeantai.jpeg",
+    },
+    title: "codeantai",
+    header: "AI to fix code",
+    description:
+      "CodeAntAI is an AI-powered tool that reviews and fixes code, enabling developers to work more efficiently by streamlining the debugging and coding process.",
+    tags: ["Typescript", "Nextjs", "Tailwind Css", "Shadecn UI"],
+    link: {
+      github: "https://github.com/pradhumngautam/codeant-ai",
+      youtube: "",
+      live: "https://codeant-ai.vercel.app/login",
+    },
+  },
+
+  {
+    image: {
       src: "/medium.jpeg",
     },
     title: "Medium",
@@ -64,29 +80,6 @@ export const projectsContent: projectData[] = [
   },
   {
     image: {
-      src: "/swift.jpeg",
-    },
-    title: "Swift Spend",
-    header: "Banking app",
-    description:
-      "SWIFT SPEND is a banking app which enables user to transfer money to other users. Backend involves RESTful APIs and custom token-based authentication for secure access control including the password hashing through bCrypt, sessions are used for making transactions for controlling multiple transfer requests on same account or in the case of server/database crash.",
-    tags: [
-      "Javascript",
-      "Node.js",
-      "Express.js",
-      "Mongoose",
-      "MongoDB",
-      "JWT",
-      "bCrypt",
-    ],
-    link: {
-      github: "https://github.com/pradhumngautam/paytm",
-      youtube: "",
-      live: "https://paytm-gules.vercel.app/",
-    },
-  },
-  {
-    image: {
       src: "/workflow.jpeg",
     },
     title: "Workflow",
@@ -95,33 +88,9 @@ export const projectsContent: projectData[] = [
       "Workflow is a work management application designed to help users organize and track their tasks efficiently. With features to mark tasks as In Progress or Completed, it enhances productivity and simplifies workplace task management.",
     tags: ["Typescript", "Nextjs", "Tailwind Css", "Shadecn UI"],
     link: {
-      github: "https://github.com/pradhumngautam/paytm",
+      github: "https://github.com/pradhumngautam/workflo",
       youtube: "",
-      live: "https://paytm-gules.vercel.app/",
-    },
-  },
-
-  {
-    image: {
-      src: "/codeantai.jpeg",
-    },
-    title: "Swift Spend",
-    header: "Banking app",
-    description:
-      "SWIFT SPEND is a banking app which enables user to transfer money to other users. Backend involves RESTful APIs and custom token-based authentication for secure access control including the password hashing through bCrypt, sessions are used for making transactions for controlling multiple transfer requests on same account or in the case of server/database crash.",
-    tags: [
-      "Javascript",
-      "Node.js",
-      "Express.js",
-      "Mongoose",
-      "MongoDB",
-      "JWT",
-      "bCrypt",
-    ],
-    link: {
-      github: "https://github.com/pradhumngautam/paytm",
-      youtube: "",
-      live: "https://paytm-gules.vercel.app/",
+      live: "https://workflo-ivory.vercel.app/dashboard",
     },
   },
 ];
