@@ -1,6 +1,4 @@
-# Eric Huang Personal Portfolio Website 🧑🏻‍💻
-
-https://erichuang.art
+# My Personal Portfolio Website 🧑🏻‍💻
 
 A super clean personal portfolio website, built with:
 
@@ -9,4 +7,4 @@ A super clean personal portfolio website, built with:
 - Framer-Motion
 - Shadcn/ui
 
-![Screenshot](./screenshot.jpg)
+https://mridulmehra.vercel.app/
