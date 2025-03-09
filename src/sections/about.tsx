@@ -18,31 +18,25 @@ export default function about() {
         <article className="flex flex-col text-lg text-neutral-300 font-medium">
           <MotionDiv delayOffset={0.4}>
             <div className="my-2">
-              I'm Pradhumn Gautam a Full Stack Developer from India. Passionate
-              about Software Development, Cloud Engineering, Backend Systems &
-              Open-Source Softwares.
+              I'm Mridul Mehra, a Full Stack Developer from India, passionate about software development, backend engineering, and AI-driven solutions.
             </div>
           </MotionDiv>
           <MotionDiv delayOffset={0.5}>
             <div className="flex flex-col gap-2">
               <p>
-                I'm currently an undergraduate, pursuing Computer Science majors
-                with Specialization in Artificial Intelligence and Machine
-                Learning from New Delhi, India.
+                I'm pursuing a B.Tech in Computer Science at SRM Institute of Science and Technology. My academic background includes strong foundations in Data Structures &  Algorithms, Database Systems, and Business Strategy.
               </p>
               <p>
-                I am passionate about creating not just functional, but also
-                aesthetically pleasing and intuitive user interfaces, ensuring a
-                seamless user experience.
+                I specialize in building scalable backend systems, optimizing API integrations, and enhancing database performance. With expertise in React.js, Next.js, Node.js, PostgreSQL, and Supabase.
               </p>
-            </div>
+            </div> 
           </MotionDiv>
         </article>
       </div>
       <div className="lg:order-2 lg:w-1/3">
         <MotionDiv delayOffset={0.4}>
           <Image
-            src="/pradhumngautam.jpeg"
+            src="/mridul.jpeg"
             alt="photo"
             width={420}
             height={420}

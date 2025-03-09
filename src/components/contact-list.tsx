@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import { cn } from "@/lib/utils";
-import { GithubIcon, LinkedinIcon, Mail, TwitterIcon } from "lucide-react";
+import { GithubIcon, LinkedinIcon, Mail, CodeIcon } from "lucide-react";
 
 type Contact = {
   name: string;
@@ -28,26 +28,26 @@ export const contacts: Contact[] = [
   {
     name: "Email",
     className: "bg-yellow-500 hover:bg-yellow-600",
-    href: "mailto:pradhumngautam0506@gmail.com",
+    href: "mailto:mridulmehra00@gmail.com",
     icon: <Mail />,
   },
 
   {
-    name: "Twitter/X",
+    name: "Leetcode",
     className: "bg-black hover:bg-gray-800/90",
-    href: "https://twitter.com/iPradhumnGautam",
-    icon: <TwitterIcon />,
+    href: "https://leetcode.com/u/Mridulmehra/",
+    icon: <CodeIcon />,
   },
   {
     name: "Github",
     className: "bg-black hover:bg-gray-800/90",
-    href: "https://github.com/pradhumngautam",
+    href: "https://github.com/mridulmehra",
     icon: <GithubIcon />,
   },
   {
     name: "LinkedIn",
     className: "bg-black hover:bg-gray-800/90",
-    href: "https://linkedin.com/in/pradhumngautam",
+    href: "https://www.linkedin.com/in/mridulmehra",
     icon: <LinkedinIcon />,
   },
 ];

@@ -9,10 +9,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "Pradhumn Gautam | Portfolio",
+  title: "Mridul Mehra | Portfolio",
   authors: [
-    { name: "Pradhumn Gautam", url: "https://github.com/pradhumngautam" },
-    { name: "Pradhumn", url: "https://github.com/pradhumngautam" },
+    { name: "Mridul Mehra", url: "https://github.com/mridulmehra" },
+    { name: "Mridul", url: "https://github.com/mridulmehra" },
   ],
   icons: [
     {
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
       href: "/photo.jpeg",
     },
   ],
-  description: "Pradhumn's personal portfolio website",
+  description: "Mridul's personal portfolio website",
   openGraph: {
-    title: "Pradhumn Gautam | Portfolio",
-    description: "Pradhumn's personal portfolio website",
+    title: "Mridul Mehra | Portfolio",
+    description: "Mridul's personal portfolio website",
     images: [
       {
         url: "/photo",
-        alt: "Pradhumn Gautam | Portfolio",
+        alt: "Mridul Mehra | Portfolio",
         width: 640,
         height: 800,
       },

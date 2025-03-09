@@ -14,7 +14,7 @@ export default function hero() {
     <section className="my-8 flex flex-col items-center justify-center">
       <h1 className="mb-4 text-center text-lg md:text-[2rem]">
         <MotionDiv delayOffset={0.2} className={cn(poppins.className)}>
-          <span className="font-semibold">Hi, I'm Pradhumn Gautam! 👋</span>
+          <span className="font-semibold">Hi, I'm Mridul Mehra! 👋</span>
         </MotionDiv>
       </h1>
 
@@ -39,8 +39,7 @@ export default function hero() {
 
         <MotionDiv delayOffset={1.4}>
           <p className="text-lg">
-            Typescript & Python guy at the morning. Systems & Infra kid at the
-            night.
+            Coding & Business Enthusiast | 🏆 3x Hackathon Winner | Product & Tech Strategy | Full-Stack Developer
           </p>
         </MotionDiv>
       </div>

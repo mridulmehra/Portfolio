@@ -7,19 +7,19 @@ const Footer = () => {
       <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-between w-full">
         <div className="flex flex-row items-center justify-between space-x-4">
           <Button size={"sm"} variant={"link"} asChild>
-            <Link href={"https://github.com/pradhumngautam"} target="_blank">
+            <Link href={"https://github.com/mridulmehra"} target="_blank">
               GitHub
             </Link>
           </Button>
           <Button size={"sm"} variant={"link"} asChild>
-            <Link href={"https://twitter.com/iPradhumnGautam"} target="_blank">
+            <Link href={"https://leetcode.com/u/Mridulmehra/"} target="_blank">
               Twitter/X
             </Link>
           </Button>
         </div>
 
         <div className="text-sm">
-          © 2024 Pradhumn Gautam. All rights reserved.
+          © 2025 Mridul Mehra. All rights reserved.
         </div>
       </div>
     </div>

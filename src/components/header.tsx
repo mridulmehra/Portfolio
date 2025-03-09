@@ -9,7 +9,7 @@ const goldenSignature = localFont({
 });
 
 export default function Header() {
-  const links = ["about", "projects", "skills", "contact"];
+  const links = ["about", "projects", "skills"];
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function Header() {
               goldenSignature.className
             )}
           >
-            <Link href="/">Pradhumn Gautam</Link>
+            <Link href="/">Mridul Mehra</Link>
           </div>
           <div className="nav-links flex gap-x-8 text-xs md:text-base">
             {links.map((link) => (
