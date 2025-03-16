@@ -7,4 +7,4 @@ A super clean personal portfolio website, built with:
 - Framer-Motion
 - Shadcn/ui
 
-https://mridulmehra.vercel.app/
+Link: https://mridulmehra.me/
